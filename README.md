@@ -20,8 +20,7 @@ pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
 pip install -r requirements.txt
 ```
 # run streamlit
-- open terminal
-- 
+- open terminal than run steamlit like this
 ```bash
 streamlit run dashboard.py
 ```
