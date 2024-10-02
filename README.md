@@ -7,7 +7,8 @@ Presents the results of air quality analysis at Dongsin Station from 2013 to 201
 - Seaborn
 - NumPy
 - SciPy
-- Statsmodels
+- babel
+- dll
 # Setup Environment
 
 ```bash
