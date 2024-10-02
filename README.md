@@ -9,13 +9,21 @@ Presents the results of air quality analysis at Dongsin Station from 2013 to 201
 - SciPy
 - Statsmodels
 # Setup Environment
+
+```bash
 conda create --name main-ds python=3.9
 conda activate main-ds
 pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
+```
 # Install requirement.txt
+```bash
 pip install -r requirements.txt
+```
 # run streamlit
 - open terminal
-- streamlit run dashboard.py
+- 
+```bash
+streamlit run dashboard.py
+```
 
 
