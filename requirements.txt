@@ -6,4 +6,4 @@ jupyter==1.0.0
 streamlit==1.26.0
 babel==2.12.1
 numpy==1.26.4
-
+pillow==10.2.0
