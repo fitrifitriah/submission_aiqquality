@@ -28,7 +28,7 @@ maximum = dongsi_df["date"].max()
 
 with st.sidebar:
     st.image("./data/img-example.jpg")
-    st.text('Hello! this is filter')
+    st.text('Hello! enjoy my analysis result ^^')
     start_date, end_date = st.date_input(
         label='Date',
         min_value= minimum,
@@ -41,7 +41,7 @@ main_df = dongsi_df[(dongsi_df["date"] >= str(start_date)) &
 
 #########
 # plot Air Polution PM2.5
-st.header('Air Pollution Dongsin :sparkles:')
+st.header('Air Polution Dongsi :sparkles:')
 st.subheader("PM2.5 Pollution")
 
 fig, ax = plt.subplots(figsize=(16, 8))
