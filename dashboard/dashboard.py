@@ -87,13 +87,11 @@ st.subheader("Air Quality Based on Particle Diameter (month)")
 groupByMonths = main_df.groupby("month").mean(numeric_only=True)
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 8))
 
-month_labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 #linechart
 ax1.plot(groupByMonth.index, groupByMonth["PM2.5"], linestyle='--', marker='o', label="PM2.5")
 ax1.plot(groupByMonth.index, groupByMonth["PM10"], linestyle='--', marker='o', label="PM10")
 ax1.set_xlabel("Months")
-ax1.set_xticklabels(month_labels)  
 ax1.set_ylabel("µg/m³ (microgram/m3)")
 ax1.set_title("PM2.5 & PM10 Line Chart")
 ax1.legend()
@@ -105,7 +103,6 @@ index = groupByMonth.index
 ax2.bar(index - bar_width/2, groupByMonth["PM2.5"], bar_width, color='skyblue', label="PM2.5")
 ax2.bar(index + bar_width/2, groupByMonth["PM10"], bar_width, color='lightgreen', label="PM10")
 ax2.set_xticks(index)  
-ax2.set_xticklabels(month_labels)  
 ax2.set_xlabel("Months")
 ax2.set_ylabel("µg/m³ (microgram/m3)")
 ax2.set_title("PM2.5 & PM10 Bar Chart")
