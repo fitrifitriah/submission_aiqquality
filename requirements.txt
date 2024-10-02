@@ -57,3 +57,4 @@ v==1
 watchdog==4.0.2
 zipp==3.20.2
 zope.interface==7.0.3
+Babel==2.12.1
